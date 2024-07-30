@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name<input type="text" id="name" required placeholder="Enter Name"></label>
+            <label id="email-label">Email<input type="email" id="email" required placeholder="Enter Email"></label>
+            <label id="number-label">Number<input type="number" id="number" min="0" placeholder="Enter Number"></label>
+        </fieldset>
+        <fieldset>
+            <label>Graduation Year
+                <select id="dropdown">
+                    <option>2025</option>
+                    <option>2026</option>
+                </select></label>
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="radio" class="inline">Male</label>
+            <label><input type="radio" name="radio" class="inline">Female</label>
+        </fieldset>
+        <fieldset>
+            <legend>Qualification</legend>
+                <label>BTECH<input type="checkbox" value="1"  class="inline check"></label>
+                <label>MTECH<input type="checkbox" value="2"  class="inline check"></label>
+                <label>OTHER<input type="checkbox" value="3"  class="inline check"></label>
+               
+                
+        </fieldset>
+        <fieldset>
+            <label>About<textarea rows="5" cols="30"></textarea></label>
+        </fieldset>
+        <input type="submit" id="submit">
+    </form>
+</body>
